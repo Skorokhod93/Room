@@ -1,0 +1,311 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body,html{
+	overflow-x: hidden;
+}
+
+
+/*Меню*/
+nav{
+	margin: 0 auto;
+	max-width: 1100px;
+	width: 100%;
+}
+
+#checkbox-menu,
+.toggle{
+	display: none;
+}
+
+.menu{
+	padding: 0;
+	margin: 0;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;	
+}
+
+.menu li a{
+	color: #000;
+	text-decoration: none;
+	align-self: center;
+	font-size: 13px;
+	padding: 10px 15px;
+	transition: background .2s linear;
+}
+
+.menu li a:hover:not([class="logo"]){
+	background: #08e8de;
+	border-radius: 3px;
+}
+
+.menu li a.logo{
+	font-size: 25px;
+	margin-right: 240px;
+}
+
+.menu li a.contacts{
+	margin-right: 100px;
+}
+
+
+/*Титулка*/
+
+.wrapper{
+	margin: 0 auto;
+	max-width: 1100px;
+	width: 100%;
+}
+
+.intro{
+	margin-top: 25px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.intro-img{
+	background-image:url(E:/Верстка/Frontend/Room/img/room.jpg);
+	width: 965px;
+	height: 615px;
+}
+.intro .intro-text{
+	position: absolute;
+	font-size: 62px;
+	right: 750px;
+	top: 220px;
+}
+
+.intro-contacts{
+	background: #08e8de;
+	max-width: 590px;
+	position: absolute;
+	right: 217px;
+	top: 610px;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 50px;
+}
+
+.intro-contacts i{
+	color: #fff;
+	margin-right: 30px;
+}
+.intro-contacts p{
+	font-size: 18px;
+	margin-right: 60px;
+}
+
+/*Статистика*/
+
+.stats{
+	display: flex;
+	margin-top: 130px;
+}
+
+.stats-line{
+	display: flex;
+}
+
+.stats-text{
+	padding: 40px;
+}
+
+.stats-text h2{
+	font-size: 40px;
+	margin-bottom: 70px;
+}
+
+.stats-text p{
+	margin-top: 50px;
+	font-size: 13px;
+	line-height: 27px;
+}
+
+.square{
+	width: 200px;
+	height: 200px;
+	background-color: #f6f5f4;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.stats-square{
+	font-size: 40px;
+	color: #08e8de;
+	margin-bottom: 15px;
+}
+
+.square-text{
+	font-size: 14px;
+}
+
+/*Cards*/
+
+.apartments{
+	background: #f6f5f4;
+	padding: 60px 0;
+}
+
+.apart h2{
+	margin-bottom: 85px;
+	font-size: 40px;
+}
+
+.card{
+	max-width: 348px;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5)
+}
+
+.card:hover{
+	background: #fafaf9;
+	box-shadow: 0 0 10px rgba(0,0,0,0.9)
+}
+
+.card-container{
+	padding: 25px;
+}
+
+.card-info{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25px;
+}
+
+.card-info .money{
+	font-size: 18px;
+	color: #08e8de;
+}
+
+.card-info i{
+	margin-right: 8px;
+}
+
+.card-info span:first-child{
+	margin-right: 18px;
+}
+
+.cards{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 30px;
+}
+
+.apart input[type=text] {
+	margin-top: 50px;
+	width: 300px;
+	height: 70px;
+	border: none;
+	padding-left: 62px;
+	font-size: 15px;
+	color: #919eb1;
+	border-top-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.apart input[type=submit]{
+	width: 115px;
+	border: none;
+	height: 70px;
+	background: #08e8de;
+	font-size: 15px;
+	margin-left: -4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.all{
+	width: 250px;
+	height: 70px;
+	border: none;
+	border-radius: 4px;
+	margin-left: 40px;
+	margin-top: 52px;
+	font-size: 15px;
+}
+
+.buttons-search{
+	display: flex;
+}
+
+/*Steps*/
+
+.steps h2{
+	margin-top: 55px;
+	font-size: 40px;
+	margin-bottom: 35px;
+}
+
+.steps-text{
+	line-height: 27px;
+	font-size: 13px;
+}
+
+.mbtext{
+	margin-bottom: 70px;
+}
+
+.stepblock{
+	width: 340px;
+	height: 370px;
+	background: #fff;
+	box-shadow: 0 0 20px rgba(0,0,0,0.3);
+	overflow:hidden;
+}
+
+.stepblock .step-num{
+	font-size: 200px;
+	position: relative;
+	top: -110px;
+	left: -20px;
+}
+
+.stepblock:hover{
+	background: #08e8de;
+	color: #fff;
+}
+
+.steps-container{
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.stepblock h4{
+	font-size: 14px;
+	margin-left: 40px;
+	margin-top: -100px;
+	margin-bottom: 20px;
+}
+
+.stepblock h4 span{
+	margin-right: 15px;
+}
+
+.stepblock .step-info{
+	margin-left: 70px;
+	line-height: 29px;
+}
+
+.stepblock .stepinfolast{
+	display: inline-block;
+	margin-left: 70px;
+	margin-top: 20px;
+	border-bottom: 3px solid #000;
+}
+
+.stepblock .stepinfolast:hover{
+	border-bottom: 3px solid #fff;
+}
